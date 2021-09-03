@@ -1,0 +1,14 @@
+//Write a C++ Program to find the product of two numbers entered by the User
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float a,b,c;
+    std::cout << "Enter two float numbers" << std::endl;
+    std::cin >> a;
+    std::cin >> b;
+    c=a*b;
+    cout<<"Sum is: "<<c;
+}
