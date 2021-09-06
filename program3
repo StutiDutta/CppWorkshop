@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int age;
+    std::cout << "input the age for vote verification" << std::endl;
+    std::cin >> age;
+    if(age>=18)
+    cout<<"the person is elegible to vote";
+    else
+    cout<<" sorry, the person is not elegible to vote";
+}
