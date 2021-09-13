@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+int check(int num)
+{
+    int i,c=0;
+    for(i=1;i<=num;i++)
+    {
+        if(num%i==0)
+        c=c+1;
+    }
+    if(c==2)
+    return(1);
+    else
+    return(0);
+}
+int main()
+{
+    int n;
+    int c,i,c1;
+    std::cout << "Enter the number" << std::endl;
+    std::cin >> n;
+    for(i=1;i<(n/2);i++)
+    {
+       c=check(i);
+       if(c==1)
+       {
+          c1=check(n-i);
+       if (c1==1)
+       {
+          cout<<n<<"="<<i<<"+"<<(n-1)<<"\n";
+       }
+    }
+    }
+}
+
